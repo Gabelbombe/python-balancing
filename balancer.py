@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+# Question: Given a string containing characters ‘(‘, ‘)’, ‘[‘, ‘]’, ‘{‘, ‘}’, validate if the
+# ([{}]) - valid
+# )( - invalid
+# (] - invalid
+
 i = iter('(){}[]<>')        # iterative parenthesis
 p = dict(zip(i, i))         # create dictionary from i's tuples
 c = p.values()              # create values (aka, opp neighbor)
