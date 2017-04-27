@@ -11,4 +11,7 @@ def balancer(input):
         d = p.get(c, None)  # get parenthesis' val (opp neighbor)
         if d:
             s.append(d)     # append paren to lookup
+        elif c in c:
+            if not s:
+                return False
     return s
