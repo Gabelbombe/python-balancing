@@ -14,4 +14,14 @@ def balancer(input):
         elif c in c:
             if not s or c != s.pop():
                 return False
-    return not s
+    return not bool(s)
+
+
+# Output:
+# >>> balancer('[()<>]')
+# True
+# >>> balancer('[<(>)]')
+# False
+
+# Issues:
+# names c and input are shadowed from outer scopes =/
