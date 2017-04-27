@@ -12,6 +12,6 @@ def balancer(input):
         if d:
             s.append(d)     # append paren to lookup
         elif c in c:
-            if not s:
+            if not s or c != s.pop():
                 return False
-    return s
+    return not s
