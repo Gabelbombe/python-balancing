@@ -6,4 +6,5 @@ c = p.values()
 
 
 def balancer(input):
-    return False
+    s = []            # stack
+    return s
